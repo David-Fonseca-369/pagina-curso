@@ -1,0 +1,358 @@
+body{
+  font-family: 'Poppins';/* Damos a todo el cuerpo la fuente de poppins importada*/
+  margin: 0;
+  padding: 0; /* Para quitar los espacios blancos de las esquinas */
+}
+p{
+  font-size: 20px; /* a la etiqueta p le damos un tamaño de fuente. */
+
+}
+li{
+  list-style: none;  /* quitamos los puntitos de la lista del atributo li.*/
+  margin-right: 25px; /* le da margen a la derecha para separar a los elementos. */
+}
+.menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* alinea todos los elementos. */
+}
+
+.lista-horizontal{
+  display: flex;
+}
+
+h1{
+  font-size: 60px;
+  margin: 0px;
+}
+h2{
+  font-size: 25px;
+  margin-bottom: 40px;
+  /* Espacio hacia abajo para que se separe del botón. */
+}
+
+a{
+  text-decoration: none; /*Quitamos el subrayado del texto del botón.*/
+  font-size:  25px;
+  color: white;
+  background: #5cb8ff;
+   /* padding Espacio interno del elemento. */
+  /* padding-top: 20px;
+  padding-bottom:20px;
+  padding-left: 30px;
+  padding-right: 30px; */
+ padding:  15px 25px 15px 25px;
+      /* top right botton left */
+}
+
+.titular{
+  text-align: center;
+  margin-top: 100px;  /* Dar espacio hacia arriba y estos bajen. */
+}
+header{
+   background: url(img/fondo.jpg);
+   background-size: cover; /* Que el fondo se adapte a la pantalla */
+   height: 100vh;
+
+}
+
+.contenedor {
+  max-width: 1280px;
+  width: 90%;
+  margin: auto; /* No se quede pegado en las esquinas el texto */
+}
+
+/* Sección sobre mí */
+h3{
+  text-align: center;
+  font-size: 55px;
+  font-weight:  normal; /* tipo de letra */
+
+}
+.contenedor-sobremi{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contenedor-parrafo-y-boton{
+  width: 42%;
+
+}
+.contenedor-parrafo-y-boton p{
+  /* solo cambia el tamaño de texto de las <p> que se encuentren en ese contenedor. */
+  font-size: 18px;
+  text-align: justify;
+}
+
+.contenedor-parrafo-y-boton a{
+  margin-top: 20px; /* para separar del parrafo */
+  display: inline-block; /* para quitar la propiedad de elemento de línea y se convierta en elemento de bloque. */
+}
+.contenedor-sobremi img{
+  border-radius: 20px;
+}
+
+.contenedor-servicios{
+  display: flex; /* alinea a todos en la misma fila. */
+  flex-wrap: wrap; /* este los alinea de acuerdo al tamaño de cuantos entran .*/
+  justify-content: space-around; /* para separar los divs  en linea */
+}
+
+.servicio{
+   width: 25%;  /* Da ancho del 29 por contendor para que entren 3 por fila.  Ojo. el pading se suma con el width*/
+   padding: 50px 38px 50px 38px; /* dar mas volumen */
+   border-radius: 10px;/* redondear */
+   margin-bottom: 40px; /*dar más espacio hacia abajo.*/
+   color: #fff; /* de color blanco a todas las fuentes que esten dentro del div con la clase servicio. */
+
+}
+
+.violeta{
+  background: #5055fd;
+}
+
+.celeste{
+  background: #40a8fa;
+}
+
+.servicio h4{
+  /* todo el div de la clase servico  de tamaño de letra a todos los h4 */
+  font-size: 25px;
+  margin: 0;
+}
+
+.servicio img{
+  float: right; /* a todas las imgenes del div con clase servicio, floten a la derecha. */
+}
+.servicio p{
+  font-size: 18px;
+  text-align: justify;
+  /* height: 200px; /* altura fija para que el icono no se suba. en caso de que sea poco texto */ */
+}
+ span{
+   font-size: 80px;
+   color: blue;
+   /* Las flechitas del carousel se encuentran en una etiqueta span  por eso se le dan el tamaño y color aquí*/
+ }
+ .owl-nav{
+   text-align: center;
+   /* para que se centren las flechitas */
+ }
+
+.contenedor-porque{
+  display: flex;
+text-align: center;
+justify-content: space-around;/* da espacio entre divs y centra */
+}
+
+.porque-singular{
+  width: 25%;
+
+}
+
+.contenedor-porque h4{
+margin: 0;
+font-size:  20px;
+}
+
+.contenedor-porque img{
+  float: center;
+}
+
+.contenedor-porque p{
+  font-size: 16px;
+  text-align: justify;
+  line-height: 28px;  /* Para meter separacion del texto tipo salto de linea */
+}
+
+#blog{
+  background: #F9FAFC;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.contenedor-publicaciones{
+  display: flex;
+  justify-content:  space-around;
+}
+
+.publicacion{
+  width: 30%;
+  box-shadow: 1px 1px 14px #ccc; /* Sombra más detalles checar video. */
+  padding-bottom:  20px; /* Espacio hacia abajo */
+}
+
+
+#blog img{
+  width: 100%;/* Para ajustar imagen */
+}
+
+#blog h4{
+  font-size: 23px;
+  margin : 0;
+  padding: 20px; /* arriba, izquierda, abajo, derecha son los mismos valores. */
+}
+
+#blog p{
+
+  color: #5A6169;
+  line-height: 24px;
+  font-size: 16px;
+  padding: 10px 20px 20px 20px;
+  margin: 0;
+  text-align: justify;
+}
+
+#blog a{
+  display: inline-block; /* lo convertimos a elemento block */
+  margin-left: 20px;
+  font-size:  16px;
+}
+
+.publicacion-segunda img{
+  /* height: 245px; */ altura para igualar imagen
+  /* En caso de haber una orden y quieras dar otra poner !important despues de  ej paddig: 0px 20px 20px 20px !important; */
+}
+
+#que-esperas{
+  background: linear-gradient(rgba(84,93,220,.94), rgba(96,171,245, .9));
+  /* r = red, g = green , b = blue a = aplpha es la transparencia */
+  text-align: center;;
+  padding: 50px 0 50px 0;
+
+}
+#que-esperas h3{
+  font-size: 23px;
+  color: #fff;
+  margin-bottom:  40px;
+}
+
+#que-esperas a{
+  padding: 15px 45px 15px 45px;
+  transition: 1s;
+}
+
+
+#que-esperas a:hover{ /*hover, cuando pasas el mouse por el objeto.*/
+  color: black;
+  transition:  1s; /* tiempo de transicion  1 segundo*/
+  transform: scale(1.1); /*se haga mas grande el boton  */
+  display: inline-block; /* quitamos el elemento linea para que haga efecto el trasnform */
+}
+
+#whatsapp a{
+  background:  none;
+  position: fixed; /* que su posicion sea fija */
+  top: 85%;
+  /* solo son validos si el elemento es fijo, para dar posicion. */
+  right: 1%;
+
+}
+
+.menu-icon{
+  display: none; /* sea invisible solo visible en pantallas pequeñas */
+}
+@media (max-width: 800px) {
+  /* se va a aplicar cuando el maximo de ancho  sea 480px*/
+  /* header{
+  height: 50vh;
+     } */
+
+     nav{ /* este es el menu de navegacion */
+       position: absolute;/* posisiconar un elemento absulatemente */
+       /* damos ubicacion */
+       top: 50px;
+       left: 0px;
+       background:  #5cb8ff;
+       width: 100%;
+       display: none; /* desaparecer menú */
+     }
+
+     nav .lista-horizontal{
+       flex-direction: column;
+
+       /* para que los elementos esten encolumnados uno de bajo del otro, por defautl
+       con display : flex; los pone en flex-directon: row, o sea que este en fila. */
+     }
+     .menu-icon{
+       display: block; /* sea visible */
+       width: 25px;
+     }
+
+     .titular{
+       margin-top: 11px;
+     }
+
+     h1{
+       font-size: 49px;
+     }
+     h2{
+       font-size: 18px;
+     }
+     .contenedor-sobremi{
+       flex-direction: column;
+     }
+
+     .contenedor-parrafo-y-boton {
+       width: 94%;
+     }
+
+     .contenedor-servicios{
+       flex-direction: column;
+     }
+
+     .servicio{
+       /* damos mas ancho a las axzules y violetas y centramos */
+       width:  72%;
+       margin: auto;
+       /* separamos los divs */
+       margin-bottom: 15px;
+
+     }
+     h3{
+       font-size: 46px;
+     }
+
+     .contenedor-porque{
+       flex-direction:  column;
+     }
+     .porque-singular{
+       width: 95%;
+       margin: auto;
+     }
+
+     .contenedor-publicaciones{ /* blog */
+       flex-direction: column;
+
+     }
+     .publicacion{
+       width: 85%;
+       margin: auto;
+       margin-top: 15px;
+     }
+
+     .imagen-sobremi{
+       width: 90%;
+     }
+}
+
+
+@media (min-width: 700px) and (max-width: 900px){
+  /* solo para tablets de 700 a 900 pixeles */
+header{
+  height: 53vh;
+}
+
+.imagen-sobremi{
+  width: 50%;
+}
+
+.servicio{
+  width: 44%;
+}
+
+.publicacion{
+  width: 62%;
+}
+}
